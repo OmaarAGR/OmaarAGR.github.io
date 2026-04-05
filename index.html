@@ -210,7 +210,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: #96aec2;
-      font-size: 1rem;
+      font-size: 1.14rem;
       text-shadow: 0 0 10px rgba(230,239,247,0.58);
       letter-spacing: 0.45em;
       padding-left: 0.45em;
@@ -228,13 +228,19 @@
     }
 
     .hero-kicker {
-      font-size: 0.84rem;
-      margin-top: 6px;
+      margin-top: 14px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.58rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #5c7b98;
+      text-shadow: 0 1px 10px rgba(234, 241, 247, 0.30);
+      line-height: 1.15;
     }
 
     .section-kicker,
     .small-label {
-      font-size: 0.82rem;
+      font-size: 1.14rem;
     }
 
     .princess-slot {
@@ -310,12 +316,20 @@
       line-height: 1.82;
     }
 
+    .hero-text,
+    .body-text,
+    .helper,
+    .detail-sub,
+    .dress-sub {
+      font-family: "Cormorant Garamond", serif;
+    }
+
     .hero-text {
       max-width: 360px;
       margin: 6px auto 0;
       font-family: "Cormorant Garamond", serif;
-      font-size: 0.96rem;
-      line-height: 1.34;
+      font-size: 1.32rem;
+      line-height: 1.46;
     }
 
 
@@ -506,7 +520,7 @@
       max-width: 390px;
       margin: 10px auto 0;
       color: var(--ink-soft);
-      font-size: 0.98rem;
+      font-size: 1.14rem;
       line-height: 1.82;
     }
 
@@ -558,7 +572,7 @@
 
     .detail-title {
       font-family: "Cormorant Garamond", serif;
-      font-size: 0.88rem;
+      font-size: 1.14rem;
       font-weight: 600;
       letter-spacing: 0.3em;
       text-transform: uppercase;
@@ -568,15 +582,16 @@
     .detail-main {
       margin-top: 6px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.82rem;
+      font-size: 2.16rem;
       font-weight: 600;
-      line-height: 1.16;
+      line-height: 1.18;
       color: #506d88;
     }
 
     .detail-sub {
       margin-top: 5px;
-      font-size: 0.97rem;
+      font-size: 1.18rem;
+      line-height: 1.6;
     }
 
     .countdown {
@@ -618,7 +633,7 @@
       padding: 12px 18px;
       border-radius: 999px;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 1.04rem;
       font-weight: 700;
       transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
     }
@@ -655,7 +670,7 @@
 
     .dress-role {
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.15rem;
+      font-size: 1.26rem;
       font-weight: 600;
       color: #6f8ba3;
     }
@@ -663,7 +678,7 @@
     .dress-main {
       margin-top: 4px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.38rem;
+      font-size: 1.6rem;
       font-weight: 600;
       color: #4f6b85;
     }
@@ -671,8 +686,8 @@
     .dress-sub {
       margin-top: 4px;
       color: var(--ink-soft);
-      font-size: 0.95rem;
-      line-height: 1.75;
+      font-size: 1.14rem;
+      line-height: 1.6;
     }
 
     .envelope-mark {
@@ -815,11 +830,13 @@
 
     .open-title {
       font-family: "Cormorant Garamond", serif;
-      font-size: 0.94rem;
+      font-size: 1.58rem;
       font-weight: 700;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      color: #6d8da8;
+      letter-spacing: 0.12em;
+      text-transform: none;
+      color: #5c7b98;
+      text-shadow: 0 1px 10px rgba(234, 241, 247, 0.30);
+      line-height: 1.15;
     }
 
     .open-name {
@@ -852,7 +869,7 @@
     .open-invitee-name {
       margin-top: 5px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.92rem;
+      font-size: 2.16rem;
       font-weight: 700;
       color: #4e6a84;
       text-shadow: 0 1px 12px rgba(236, 242, 247, 0.34);
@@ -1003,6 +1020,12 @@
         font-size: clamp(3.6rem, 15vw, 5.8rem);
       }
 
+      .open-title {
+        font-size: 1.32rem;
+        letter-spacing: 0.08em;
+        line-height: 1.1;
+      }
+
       .open-invitee-name {
         font-size: 1.72rem;
       }
@@ -1070,7 +1093,10 @@
       }
 
       .hero-kicker {
-        margin-top: 2px;
+        margin-top: 8px;
+        font-size: 1.34rem;
+        letter-spacing: 0.08em;
+        line-height: 1.1;
       }
 
       .cover-invitee-label {
@@ -1087,7 +1113,7 @@
       }
 
       .hero-text {
-        font-size: 0.92rem;
+        font-size: 1.14rem;
       }
 
       .scroll-cue {
@@ -1164,11 +1190,12 @@
     <div class="open-card">
       <div class="open-shine"></div>
       <div class="silver-ornament"><span>✦ ✧ ✦</span></div>
-      <div class="open-title">Toca para abrir tu invitación</div>
+      <div class="open-title">Mis 15 años</div>
+      <div class="silver-ornament" style="margin-top:8px; margin-bottom: 4px;"><span>✦ ✧ ✦</span></div>
       <div class="open-name"><span class="cap">A</span>lejandra</div>
       <div class="open-invitee-label">Invitación para</div>
       <div id="overlayGuestName" class="open-invitee-name">Invitado especial</div>
-      <button id="openInviteBtn" class="open-btn" type="button">Abrir invitación</button>
+            <button id="openInviteBtn" class="open-btn" type="button">Descubrir invitación</button>
     </div>
   </div>
 
@@ -1182,13 +1209,14 @@
         </div>
 
         <div class="hero-kicker">Mis 15 años</div>
+        <div class="silver-ornament" style="margin-top:8px; margin-bottom: 0;"><span>✦ ✧ ✦</span></div>
         <h1 class="name"><span class="cap">A</span>lejandra</h1>
 
         <div class="cover-invitee-label">Invitación para</div>
         <div id="coverGuestName" class="cover-invitee-name">Invitado especial</div>
 
         <p class="hero-text">
-          Desliza para descubrir mi invitación
+          Te invitamos a descubrir esta invitación especial
         </p>
 
         <div class="scroll-cue" aria-hidden="true">
@@ -1212,7 +1240,7 @@
           <div class="silver-ornament"><span>✦ ✧ ✦</span></div>
 
           <p class="hero-text" style="margin-top:16px;">
-            Entre luces, sueños y una noche inolvidable, quiero invitarte a celebrar conmigo uno de los momentos más especiales de mi vida.
+            Con inmensa alegría, queremos invitarte a celebrar los quince años de nuestra querida hija Alejandra y a compartir con nosotros una noche llena de amor, ilusión y momentos inolvidables.
           </p>
 
         </section>
@@ -1257,7 +1285,7 @@
             </div>
             <div>
               <div class="detail-title">Lugar</div>
-              <div class="detail-main">Salón de Eventos Palma real</div>
+              <div class="detail-main">Salón de Eventos Palma Real</div>
               <div class="detail-sub">Vereda Apiay, Villavicencio, Meta</div>
             </div>
           </div>
@@ -1267,7 +1295,7 @@
 
         <section class="section fade-up">
           <div class="section-kicker">Cómo llegar</div>
-          <p class="body-text">Abre la ruta desde tu celular y llega fácil a la celebración.</p>
+          <p class="body-text" style="font-size:1.06rem; line-height:1.62;">Abre la ruta desde tu celular y llega fácil a la celebración.</p>
 
           <div class="map-frame-wrap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.6267328600184!2d-73.56218992472432!3d4.096137046601237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3e29a92890b777%3A0xa13716e57229ff4!2sSal%C3%B3n%20de%20Eventos%20Palma%20real!5e0!3m2!1sen!2sco!4v1775351181229!5m2!1sen!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -1308,11 +1336,11 @@
 
         <section class="section fade-up">
           <div class="section-kicker">Confirmación</div>
-          <div class="detail-main" style="margin-top:12px;">Quiero celebrar esta noche contigo</div>
-          <p class="body-text">
-            Confírmame tu asistencia para reservar tu lugar y hacer que esta velada sea aún más especial.
+          <div class="detail-main" style="margin-top:12px;">Esperamos contar con tu grata compañía</div>
+          <p class="body-text" style="font-size:1.06rem; line-height:1.62;">
+            Agradecemos que nos confirmes tu asistencia para reservar tu lugar y acompañarnos en esta celebración tan especial.
           </p>
-          <p class="helper" style="color:#7392af; margin-top: 4px;">Confirmar antes del 10 de mayo de 2026</p>
+          <p class="helper" style="color:#7392af; margin-top: 4px; font-size:1.08rem;">Confirmar antes del 10 de mayo de 2026</p>
           <div class="button-row">
             <a id="rsvpBtn" href="https://wa.me/573108825774?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20a%C3%B1os" target="_blank" rel="noopener noreferrer" class="soft-btn btn-whatsapp">Confirmar por WhatsApp</a>
           </div>
