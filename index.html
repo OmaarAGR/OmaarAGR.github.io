@@ -210,7 +210,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: #96aec2;
-      font-size: 1.14rem;
+      font-size: 1.08rem;
       text-shadow: 0 0 10px rgba(230,239,247,0.58);
       letter-spacing: 0.45em;
       padding-left: 0.45em;
@@ -240,7 +240,7 @@
 
     .section-kicker,
     .small-label {
-      font-size: 1.14rem;
+      font-size: 1.08rem;
     }
 
     .princess-slot {
@@ -328,7 +328,7 @@
       max-width: 360px;
       margin: 6px auto 0;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.32rem;
+      font-size: 1.2rem;
       line-height: 1.46;
     }
 
@@ -520,7 +520,7 @@
       max-width: 390px;
       margin: 10px auto 0;
       color: var(--ink-soft);
-      font-size: 1.14rem;
+      font-size: 1.08rem;
       line-height: 1.82;
     }
 
@@ -572,7 +572,7 @@
 
     .detail-title {
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.14rem;
+      font-size: 1.08rem;
       font-weight: 600;
       letter-spacing: 0.3em;
       text-transform: uppercase;
@@ -582,7 +582,7 @@
     .detail-main {
       margin-top: 6px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 2.16rem;
+      font-size: 2.08rem;
       font-weight: 600;
       line-height: 1.18;
       color: #506d88;
@@ -590,7 +590,7 @@
 
     .detail-sub {
       margin-top: 5px;
-      font-size: 1.18rem;
+      font-size: 1.12rem;
       line-height: 1.6;
     }
 
@@ -678,7 +678,7 @@
     .dress-main {
       margin-top: 4px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 1.6rem;
+      font-size: 1.52rem;
       font-weight: 600;
       color: #4f6b85;
     }
@@ -686,7 +686,7 @@
     .dress-sub {
       margin-top: 4px;
       color: var(--ink-soft);
-      font-size: 1.14rem;
+      font-size: 1.08rem;
       line-height: 1.6;
     }
 
@@ -869,7 +869,7 @@
     .open-invitee-name {
       margin-top: 5px;
       font-family: "Cormorant Garamond", serif;
-      font-size: 2.16rem;
+      font-size: 2.08rem;
       font-weight: 700;
       color: #4e6a84;
       text-shadow: 0 1px 12px rgba(236, 242, 247, 0.34);
@@ -1021,7 +1021,7 @@
       }
 
       .open-title {
-        font-size: 1.32rem;
+        font-size: 1.28rem;
         letter-spacing: 0.08em;
         line-height: 1.1;
       }
@@ -1037,6 +1037,113 @@
       .map-frame-wrap iframe {
         height: 240px;
       }
+    }
+    .rsvp-confirm-box {
+      margin-top: 18px;
+      padding: 18px 16px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.34);
+      border: 1px solid rgba(173, 201, 223, 0.42);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.42),
+        0 10px 24px rgba(165, 205, 233, 0.08);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      text-align: center;
+    }
+
+    .rsvp-name-line {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.22rem;
+      line-height: 1.55;
+      color: #4f6b85;
+    }
+
+    .rsvp-name-line strong {
+      font-size: 1.34em;
+      font-weight: 700;
+      color: #46627d;
+    }
+
+    .rsvp-question {
+      margin-top: 12px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.24rem;
+      line-height: 1.45;
+      color: #5d7b97;
+    }
+
+    .rsvp-options {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+      text-align: left;
+    }
+
+    .rsvp-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(173, 201, 223, 0.48);
+      background: rgba(255,255,255,0.42);
+      cursor: pointer;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.12rem;
+      color: #4f6b85;
+    }
+
+    .rsvp-option input {
+      accent-color: #7ca8cc;
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      flex: 0 0 auto;
+    }
+
+    .rsvp-submit {
+      width: 100%;
+      min-height: 52px;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      margin-top: 14px;
+      background: linear-gradient(135deg, rgba(170, 212, 238, 0.95), rgba(236, 246, 253, 0.95));
+      color: #3e5e7c;
+      font-size: 0.96rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: 0 12px 24px rgba(165, 205, 233, 0.18);
+    }
+
+    .rsvp-status {
+      margin-top: 10px;
+      min-height: 24px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.08rem;
+      color: #5f7e9d;
+      text-align: center;
+    }
+    
+
+    .map-frame-wrap {
+      margin-top: 14px;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(173, 201, 223, 0.45);
+      box-shadow: 0 12px 28px rgba(165, 205, 233, 0.10);
+      background: rgba(255,255,255,0.28);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+    }
+
+    .map-frame-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 280px;
+      border: 0;
     }
 
     .fade-up {
@@ -1094,7 +1201,7 @@
 
       .hero-kicker {
         margin-top: 8px;
-        font-size: 1.34rem;
+        font-size: 1.3rem;
         letter-spacing: 0.08em;
         line-height: 1.1;
       }
@@ -1113,7 +1220,7 @@
       }
 
       .hero-text {
-        font-size: 1.14rem;
+        font-size: 1.08rem;
       }
 
       .scroll-cue {
@@ -1195,7 +1302,7 @@
       <div class="open-name"><span class="cap">A</span>lejandra</div>
       <div class="open-invitee-label">Invitación para</div>
       <div id="overlayGuestName" class="open-invitee-name">Invitado especial</div>
-            <button id="openInviteBtn" class="open-btn" type="button">Abrir invitación</button>
+            <button id="openInviteBtn" class="open-btn" type="button">Descubrir invitación</button>
     </div>
   </div>
 
@@ -1216,7 +1323,7 @@
         <div id="coverGuestName" class="cover-invitee-name">Invitado especial</div>
 
         <p class="hero-text">
-          Te invitamos a mirar esta invitación especial
+          Te invitamos a descubrir esta invitación especial
         </p>
 
         <div class="scroll-cue" aria-hidden="true">
@@ -1337,13 +1444,38 @@
         <section class="section fade-up">
           <div class="section-kicker">Confirmación</div>
           <div class="detail-main" style="margin-top:12px;">Esperamos contar con tu grata compañía</div>
-          <p class="body-text" style="font-size:1.06rem; line-height:1.62;">
+          <p class="body-text" style="font-size:1.24rem; line-height:1.7;">
             Agradecemos que nos confirmes tu asistencia para reservar tu lugar y acompañarnos en esta celebración tan especial.
           </p>
-          <p class="helper" style="color:#7392af; margin-top: 4px; font-size:1.08rem;">Confirmar antes del 10 de mayo de 2026</p>
-          <div class="button-row">
-            <a id="rsvpBtn" href="https://wa.me/573108825774?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%2015%20a%C3%B1os" target="_blank" rel="noopener noreferrer" class="soft-btn btn-whatsapp">Confirmar por WhatsApp</a>
-          </div>
+          <p class="helper" style="color:#7392af; margin-top: 4px; font-size:1.14rem;">Confirmar antes del 10 de mayo de 2026</p>
+
+          <form id="rsvpForm">
+            <input type="hidden" id="guestNameBase64" name="guestNameBase64">
+            <input type="hidden" id="guestNameDecoded" name="guestNameDecoded">
+
+            <div class="rsvp-confirm-box">
+              <div class="rsvp-name-line">
+                <strong id="guestNameDisplay">Invitado especial</strong>
+              </div>
+              <div class="rsvp-question">
+                ¿Nos acompañarás en esta fecha tan especial?
+              </div>
+
+              <div class="rsvp-options">
+                <label class="rsvp-option">
+                  <input type="radio" name="attendance" value="Sí asistiré" required>
+                  <span>Sí, asistiré</span>
+                </label>
+                <label class="rsvp-option">
+                  <input type="radio" name="attendance" value="No podré asistir" required>
+                  <span>No, no podré asistir</span>
+                </label>
+              </div>
+
+              <button class="rsvp-submit" type="submit">Enviar confirmación</button>
+              <div id="rsvpStatus" class="rsvp-status"></div>
+            </div>
+          </form>
         </section>
       </div>
     </article>
@@ -1367,11 +1499,28 @@
 
     function getGuestName() {
       const params = new URLSearchParams(window.location.search);
-      const encodedName = params.get('n');
-      const plainName = params.get('name');
 
-      if (encodedName) {
-        const decoded = decodeBase64Unicode(encodedName);
+      const possibleEncoded =
+        params.get('n') ||
+        params.get('guest') ||
+        params.get('invitado') ||
+        params.get('nombre');
+
+      const plainName =
+        params.get('name') ||
+        params.get('guestName') ||
+        params.get('invitadoNombre');
+
+      function normalizeBase64(value) {
+        if (!value) return value;
+        let normalized = value.replace(/-/g, '+').replace(/_/g, '/').trim();
+        const pad = normalized.length % 4;
+        if (pad) normalized += '='.repeat(4 - pad);
+        return normalized;
+      }
+
+      if (possibleEncoded) {
+        const decoded = decodeBase64Unicode(normalizeBase64(possibleEncoded));
         if (decoded && decoded.trim()) return decoded.trim();
       }
 
@@ -1478,17 +1627,104 @@
       });
     }
 
-    window.addEventListener('DOMContentLoaded', function () {
-      const resolvedGuestName = getGuestName();
-      document.getElementById('coverGuestName').textContent = resolvedGuestName;
-      document.getElementById('overlayGuestName').textContent = resolvedGuestName;
 
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz-4tHW-b2rI5xLp6G5RJ1bipg9KX6vHWouUnUYSlcipZP9io618n0bcmK_P0d7fHQ/exec"; // Pega aquí la URL de tu Apps Script
+
+    async function submitRSVP(event) {
+      event.preventDefault();
+
+      const form = document.getElementById('rsvpForm');
+      const status = document.getElementById('rsvpStatus');
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const attendance = form.querySelector('input[name="attendance"]:checked');
+
+      if (!attendance) {
+        status.textContent = 'Selecciona si asistirás o no.';
+        return;
+      }
+
+      const payload = {
+        guestNameBase64: document.getElementById('guestNameBase64').value,
+        guestNameDecoded: document.getElementById('guestNameDecoded').value,
+        attendance: attendance.value,
+        submittedAt: new Date().toISOString()
+      };
+
+      if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('PEGA_AQUI')) {
+        status.textContent = 'Falta pegar la URL del Apps Script.';
+        return;
+      }
+
+      submitBtn.disabled = true;
+      status.textContent = 'Enviando confirmación...';
+
+      try {
+        const response = await fetch(APPS_SCRIPT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+
+        const text = await response.text();
+        let result = {};
+        try {
+          result = JSON.parse(text);
+        } catch (e) {
+          result = { ok: response.ok };
+        }
+
+        if (response.ok && (result.ok === undefined || result.ok)) {
+          status.textContent = 'Tu confirmación fue guardada correctamente.';
+        } else {
+          status.textContent = 'No se pudo guardar la confirmación.';
+        }
+      } catch (error) {
+        status.textContent = 'Error al enviar la confirmación.';
+      } finally {
+        submitBtn.disabled = false;
+      }
+    }
+
+
+    window.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const encodedName =
+        params.get('n') ||
+        params.get('guest') ||
+        params.get('invitado') ||
+        params.get('nombre');
+
+      const resolvedGuestName = getGuestName();
+
+      const coverGuest = document.getElementById('coverGuestName');
+      const overlayGuest = document.getElementById('overlayGuestName');
+      const guestDisplay = document.getElementById('guestNameDisplay');
+      const guestDecoded = document.getElementById('guestNameDecoded');
+      const guestBase64 = document.getElementById('guestNameBase64');
+      const rsvpForm = document.getElementById('rsvpForm');
       const audio = document.getElementById('bgMusic');
       const musicBtn = document.getElementById('musicToggle');
       const openBtn = document.getElementById('openInviteBtn');
 
-      setupMusic(audio, musicBtn);
-      openBtn.addEventListener('click', openInvitation);
+      if (coverGuest) coverGuest.textContent = resolvedGuestName;
+      if (overlayGuest) overlayGuest.textContent = resolvedGuestName;
+      if (guestDisplay) guestDisplay.textContent = resolvedGuestName;
+      if (guestDecoded) guestDecoded.value = resolvedGuestName;
+      if (guestBase64) {
+        guestBase64.value = encodedName || btoa(unescape(encodeURIComponent(resolvedGuestName)));
+      }
+
+      if (audio && musicBtn) {
+        setupMusic(audio, musicBtn);
+      }
+
+      if (openBtn) {
+        openBtn.addEventListener('click', openInvitation);
+      }
+
+      if (rsvpForm) {
+        rsvpForm.addEventListener('submit', submitRSVP);
+      }
 
       updateCountdown();
       setInterval(updateCountdown, 1000);
