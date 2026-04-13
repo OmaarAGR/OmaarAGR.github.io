@@ -7,8 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Italianno&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-photo: url("fondo.jpeg"); /* CAMBIA AQUÍ TU IMAGEN DE FONDO */
@@ -286,18 +285,61 @@
     }
 
     .name {
-      font-family: "Ballet", cursive;
-      font-size: clamp(4.4rem, 14.5vw, 6.9rem);
-      line-height: 0.9;
+      font-family: "Italianno", cursive;
+      font-style: italic;
+      font-size: clamp(3.6rem, 12vw, 5.4rem);
+      font-weight: 600;
+      line-height: 0.95;
       margin: 8px 0 0;
+      letter-spacing: 0.01em;
       color: transparent;
       background: linear-gradient(180deg, #b0c5d7 0%, #708ca8 48%, #cad9e5 100%);
       -webkit-background-clip: text;
       background-clip: text;
       text-shadow:
-        0 2px 14px rgba(185, 205, 222, 0.20),
-        0 0 1px rgba(95, 127, 159, 0.22);
-      filter: drop-shadow(0 4px 8px rgba(192, 208, 223, 0.18));
+        0 2px 12px rgba(185, 205, 222, 0.18),
+        0 0 1px rgba(95, 127, 159, 0.18);
+      max-width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+      text-wrap: balance;
+    }
+
+    .open-name {
+      margin-top: 10px;
+      font-family: "Italianno", cursive;
+      font-style: italic;
+      font-size: clamp(3.4rem, 11vw, 5rem);
+      font-weight: 600;
+      line-height: 0.95;
+      letter-spacing: 0.01em;
+      color: transparent;
+      background: linear-gradient(180deg, #b0c5d7 0%, #708ca8 48%, #cad9e5 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow:
+        0 2px 12px rgba(185, 205, 222, 0.18),
+        0 0 1px rgba(95, 127, 159, 0.18);
+      max-width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .name-line {
+      display: block;
+    }
+
+    .cap {
+      font-size: 1.08em;
+    }
+
+    @media (max-width: 639px) {
+      .name {
+        font-size: clamp(3.7rem, 14vw, 5.2rem);
+      }
+
+      .open-name {
+        font-size: clamp(3.5rem, 13.5vw, 5rem);
+      }
     }
 
     .name .cap { font-size: 1.10em; }
@@ -853,20 +895,6 @@
       line-height: 1.15;
     }
 
-    .open-name {
-      margin-top: 10px;
-      font-family: "Ballet", cursive;
-      font-size: clamp(4.3rem, 14.2vw, 6.8rem);
-      line-height: 0.9;
-      color: transparent;
-      background: linear-gradient(180deg, #b0c5d7 0%, #708ca8 48%, #cad9e5 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-shadow:
-        0 2px 14px rgba(185, 205, 222, 0.20),
-        0 0 1px rgba(95, 127, 159, 0.22);
-      filter: drop-shadow(0 4px 8px rgba(192, 208, 223, 0.18));
-    }
 
     .open-name .cap { font-size: 1.10em; }
 
@@ -1299,6 +1327,12 @@
     .event-date {
       font-size: 1.6rem;
     }
+    .invitation-addressee {
+      font-size: 1rem;
+    }
+    .parents-name-size {
+      font-size: 1.6rem;
+    }
     .envelope-mark {
       width: 74px;
       height: 74px;
@@ -1345,8 +1379,11 @@
       <div class="silver-ornament"><span>✦ ✧ ✦</span></div>
       <div class="open-title">Mis 15 años</div>
       <div class="silver-ornament" style="margin-top:8px; margin-bottom: 4px;"><span>✦ ✧ ✦</span></div>
-      <div class="open-name"><span class="cap">A</span>lejandra</div>
-      <div class="open-invitee-label">Invitación para</div>
+      <div class="open-name">
+        <span class="name-line"><span class="cap">M</span>aria</span>
+        <span class="name-line"><span class="cap">A</span>lejandra</span>
+      </div>
+      <div class="open-invitee-label invitation-addressee">Invitación para</div>
       <div id="overlayGuestName" class="open-invitee-name">Invitado especial</div>
             <button id="openInviteBtn" class="open-btn" type="button">Abrir invitación</button>
     </div>
@@ -1363,9 +1400,12 @@
 
         <div class="hero-kicker">Mis 15 años</div>
         <div class="silver-ornament" style="margin-top:8px; margin-bottom: 0;"><span>✦ ✧ ✦</span></div>
-        <h1 class="name"><span class="cap">A</span>lejandra</h1>
-
-        <div class="cover-invitee-label">Invitación para</div>
+        <h1 class="name">
+          <span class="name-line"><span class="cap">M</span>aria</span>
+          <span class="name-line"><span class="cap">A</span>lejandra</span>
+        </h1>
+        
+        <div class="cover-invitee-label invitation-addressee">Invitación para</div>
         <div id="coverGuestName" class="cover-invitee-name">Invitado especial</div>
 
         <p class="hero-text">
@@ -1391,7 +1431,7 @@
       <div class="inner">
         <section class="fade-up">
           <div class="silver-ornament"><span>✦ ✧ ✦</span></div>
-          <div class="section-kicker">Omar Y Yaneth</div>
+          <div class="section-kicker parents-name-size ">Omar Y Yaneth</div>
           <p class="hero-text" style="margin-top:16px;">
             Como papás, con inmensa alegría, queremos invitarte a celebrar los quince años de nuestra querida hija Alejandra y a compartir con nosotros una noche llena de amor, ilusión y momentos inolvidables.
           </p>
@@ -1492,7 +1532,7 @@
 
       <div class="separator fade-up"></div>
         <section class="section fade-up">
-          <div class="section-kicker">Se reserva el color azul bebé</div>
+          <div class="section-kicker">Se reserva el color azul celeste</div>
           <div style="display: flex; justify-content: center; align-items: center; margin-top: 18px;">
             <div style="width: 60px; height: 60px; border-radius: 50%; background-color: #A8D1F7;"></div>
           </div>
